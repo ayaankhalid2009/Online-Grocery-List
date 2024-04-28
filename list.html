@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grocery List Maker</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff3cd; /* Light yellow background */
+        padding: 20px;
+    }
+    .container {
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background-color: #ffffe0; /* Lighter yellow */
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .category {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+    h1, h2 {
+        color: #333;
+    }
+    label {
+        display: block;
+        margin: 5px 0;
+        cursor: pointer;
+    }
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #ffc107; /* Vibrant yellow button */
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #e0a800;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Grocery List Maker</h1>
+
+    <!-- Meat & Poultry -->
+    <div class="category">
+        <h2>Meat & Poultry</h2>
+        <label><input type="checkbox" value="Upland game bird"> Upland game bird</label>
+        <label><input type="checkbox" value="Venison"> Venison</label>
+        <label><input type="checkbox" value="Whole Chicken"> Whole Chicken</label>
+        <label><input type="checkbox" value="Xiang Chang (Chinese sausage)"> Xiang Chang (Chinese sausage)</label>
+        <label><input type="checkbox" value="Yakitori (Japanese grilled chicken skewers)"> Yakitori (Japanese grilled chicken skewers)</label>
+    </div>
+
+    <!-- Seafood -->
+    <div class="category">
+        <h2>Seafood</h2>
+        <label><input type="checkbox" value="Zander (a type of fish)"> Zander (a type of fish)</label>
+        <label><input type="checkbox" value="Anchovies"> Anchovies</label>
+        <label><input type="checkbox" value="Bass"> Bass</label>
+        <label><input type="checkbox" value="Crab"> Crab</label>
+        <label><input type="checkbox" value="Dover Sole"> Dover Sole</label>
+    </div>
+
+    <!-- Grains & Cereals -->
+    <div class="category">
+        <h2>Grains & Cereals</h2>
+        <label><input type="checkbox" value="Edamame (technically a legume)"> Edamame (technically a legume)</label>
+        <label><input type="checkbox" value="Farro"> Farro</label>
+        <label><input type="checkbox" value="Grits"> Grits</label>
+        <label><input type="checkbox" value="Hominy"> Hominy</label>
+        <label><input type="checkbox" value="Israeli Couscous"> Israeli Couscous</label>
+    </div>
+
+    <!-- Condiments & Sauces -->
+    <div class="category">
+        <h2>Condiments & Sauces</h2>
+        <label><input type="checkbox" value="Jam"> Jam</label>
+        <label><input type="checkbox" value="Ketchup"> Ketchup</label>
+        <label><input type="checkbox" value="Lime Pickle"> Lime Pickle</label>
+        <label><input type="checkbox" value="Mustard"> Mustard</label>
+        <label><input type="checkbox" value="Nutella"> Nutella</label>
+    </div>
+
+    <!-- Beverages -->
+    <div class="category">
+        <h2>Beverages</h2>
+        <label><input type="checkbox" value="Orange Juice"> Orange Juice</label>
+        <label><input type="checkbox" value="Pomegranate Juice"> Pomegranate Juice</label>
+        <label><input type="checkbox" value="Quince Tea"> Quince Tea</label>
+        <label><input type="checkbox" value="Raspberry Lemonade"> Raspberry Lemonade</label>
+        <label><input type="checkbox" value="Soda"> Soda</label>
+    </div>
+
+    <!-- Snacks & Sweets -->
+    <div class="category">
+        <h2>Snacks & Sweets</h2>
+        <label><input type="checkbox" value="Tortilla Chips"> Tortilla Chips</label>
+        <label><input type="checkbox" value="Unagi Pie (a type of Japanese snack)"> Unagi Pie (a type of Japanese snack)</label>
+        <label><input type="checkbox" value="Vanilla Wafers"> Vanilla Wafers</label>
+        <label><input type="checkbox" value="Walnut Brownies"> Walnut Brownies</label>
+        <label><input type="checkbox" value="Xylitol Gum"> Xylitol Gum</label>
+    </div>
+	
+	<!-- Bakery -->
+    <div class="category">
+        <h2>Bakery</h2>
+        <label><input type="checkbox" value="Apple Pie - ایپل پائی"> Apple Pie - ایپل پائی</label>
+        <label><input type="checkbox" value="Baguettes - بیگیٹ"> Baguettes - بیگیٹ</label>
+        <label><input type="checkbox" value="Ciabatta - سیاباٹا"> Ciabatta - سیاباٹا</label>
+        <label><input type="checkbox" value="Danish Pastries - ڈینش پیسٹری"> Danish Pastries - ڈینش پیسٹری</label>
+        <label><input type="checkbox" value="English Muffins - انگلش مفن"> English Muffins - انگلش مفن</label>
+    </div>
+
+    <!-- Dairy -->
+    <div class="category">
+        <h2>Dairy</h2>
+        <label><input type="checkbox" value="Feta Cheese - فیٹا پنیر"> Feta Cheese - فیٹا پنیر</label>
+        <label><input type="checkbox" value="Gouda Cheese - گوڈا پنیر"> Gouda Cheese - گوڈا پنیر</label>
+        <label><input type="checkbox" value="Half and Half Cream - ہاف اینڈ ہاف کریم"> Half and Half Cream - ہاف اینڈ ہاف کریم</label>
+        <label><input type="checkbox" value="Ice Cream - آئس کریم"> Ice Cream - آئس کریم</label>
+        <label><input type="checkbox" value="Jalapeño Havarti - جلپینو ہاورٹی"> Jalapeño Havarti - جلپینو ہاورٹی</label>
+    </div>
+
+    <!-- Fruits -->
+    <div class="category">
+        <h2>Fruits</h2>
+        <label><input type="checkbox" value="Kiwi - کیوی"> Kiwi - کیوی</label>
+        <label><input type="checkbox" value="Lemons - لیموں"> Lemons - لیموں</label>
+        <label><input type="checkbox" value="Mangoes - آم"> Mangoes - آم</label>
+        <label><input type="checkbox" value="Nectarines - نیکٹرائن"> Nectarines - نیکٹرائن</label>
+        <label><input type="checkbox" value="Oranges - اورنج"> Oranges - اورنج</label>
+    </div>
+
+    <!-- Vegetables -->
+    <div class="category">
+        <h2>Vegetables</h2>
+        <label><input type="checkbox" value="Potatoes - آلو"> Potatoes - آلو</label>
+        <label><input type="checkbox" value="Quinoa - کینوا"> Quinoa - کینوا</label>
+        <label><input type="checkbox" value="Radishes - مولی"> Radishes - مولی</label>
+        <label><input type="checkbox" value="Spinach - پالک"> Spinach - پالک</label>
+        <label><input type="checkbox" value="Tomatoes - ٹماٹر"> Tomatoes - ٹماٹر</label>
+    </div>
+
+    <!-- Frozen Foods -->
+    <div class="category">
+        <h2>Frozen Foods</h2>
+        <label><input type="checkbox" value="Yogurt Pops"> Yogurt Pops</label>
+        <label><input type="checkbox" value="Zucchini Fritters"> Zucchini Fritters</label>
+        <label><input type="checkbox" value="Apple Turnovers"> Apple Turnovers</label>
+        <label><input type="checkbox" value="Blueberry Waffles"> Blueberry Waffles</label>
+        <label><input type="checkbox" value="Chicken Nuggets"> Chicken Nuggets</label>
+    </div>
+
+    <button onclick="downloadList()">Download List</button>
+</div>
+
+<script>
+    function downloadList() {
+        let items = document.querySelectorAll('input[type="checkbox"]:checked');
+        let list = Array.from(items).map(item => item.value).join('\n');
+        let element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(list));
+        element.setAttribute('download', "GroceryList.txt");
+
+        element.style.display = 'none';
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
+    }
+</script>
+</body>
+</html>
